@@ -6,6 +6,12 @@ name: Upload Package
 on:
   release:
     types: [created]
+  workflow_dispatch:
+    inputs:
+      Reason:
+        description: 'Reasons for temporary publish'     
+        required: true
+        default: 'No reason.Just do it.'
 
 jobs:
   deploy:
