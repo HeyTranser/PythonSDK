@@ -1,3 +1,4 @@
 name = "pytrs"
-from pytrs import trs
+from pytrs import *
+
 
